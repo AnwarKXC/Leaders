@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'prim'; 
+  src: url('./fonts/Brushline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container{
+  max-width: 1440px;
+}
+/* *{
+  outline: 1px solid red !important
+} */
+
+.cent{
+  @apply flex justify-center items-center
+}
+
+.button-primary{
+  @apply text-primary bg-white rounded-[16px] py-[14px] px-[50px] font-semibold text-lg border-primary border 
+  }
+
+
+.section-title {
+  @apply  text-neutral-700 text-[28px] font-bold capitalize leading-7 py-5
+  }
+.sub-title {
+  @apply  max-w-[625px] text-zinc-600 text-lg capitalize leading-9 line-clamp-4
+  }
+  section{
+    @apply py-[60px]
+  }
+.curve{
+  background-image: url(./assets/blob\ \(2\).svg);
+  background-size: contain;
+  overflow: hidden;
+}

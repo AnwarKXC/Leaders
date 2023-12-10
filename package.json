@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  },
+  "scripts": {
+    "pug":" pug -w ./src/pug -o  ./dist/html -P ",
+    "tailwind":" npx tailwindcss -i ./src/style.css -o ./src/output.css --watch "
+  }
+}
